@@ -1,0 +1,143 @@
+@import "nib"
+@import "bootstrap.css"
+body
+	font-size 16px
+	color #525252
+.logo
+	width 100px
+	max-width 100%
+.logo2
+	width 100px
+	max-width 100%
+	margin .7em
+header
+	background white
+	text-align center
+	width 100%
+	height 100px
+	z-index 100000
+	position fixed
+.Header-button
+	display none
+.navbar
+	height 100px
+	text-align center
+	margin 0
+	background white
+	position fixed
+	width 100%
+	z-index 100
+	border-radius 0
+	&>ul
+		margin 0
+		padding 0
+		&>a
+			&:hover
+				color white
+				text-decoration none
+			&>li
+				display inline-block
+				verical-align middle
+				padding .7em 1em
+				text-transform uppercase
+				&:hover
+					border-radius 5px
+					background #44a6c6
+					color white !important
+		& .logoli
+			display inline-block
+			verical-align middle
+			padding .7em 1em
+			&:hover
+				background none
+.nav-mobile
+	display none
+	background white
+.carousel
+	z-index -1
+.Container
+	padding-top 100px
+	&-img
+		width 100%
+	&-content
+		width 80%
+		margin 0 auto
+		margin-top -5em
+		background white
+		padding 5em
+		padding-top 3em
+		& h1
+			margin 0
+			margin-bottom 1em
+		& p
+			line-height 1.9
+.Last
+	margin 0 auto
+.row
+	margin 1em 15px
+	text-align center
+	& img
+		width 400
+		max-width 100%
+	& .col-md-6
+		padding 1em
+.frase
+	background url('../img/img2.jpg') no-repeat fixed
+	background-position center center
+	background-size cover
+	padding 5em 15em
+	
+.Footer
+	background #44a6c6
+	padding 1em
+	color white
+	text-align center
+
+@media (max-width:1091px)
+	.navbar
+		font-size 14px
+
+@media (max-width:968px)
+	.Container
+		&-content
+			width 90%
+			padding 1em
+			padding-top 2em
+			margin-top -3em
+	.frase
+		padding 5em 1em
+	.navbar 
+		display none
+	.nav-mobile
+		display block
+		text-align left
+		position fixed
+		text-transform uppercase
+		height 100%
+		box-shadow 3px 14px 20px
+		width 230px
+		left -250px
+		transition .3s
+		& li
+			list-style none
+			padding .5em
+			&:hover
+					border-radius 5px
+					background #44a6c6
+					color white !important
+		& a
+			&:hover
+				color white
+				text-decoration none
+		&.is-active
+			left 0			
+	.Header-button 
+		&.is-active
+			display block
+			position absolute
+			top 1.5em
+			left 1.5em
+			font-size 25px
+			background none
+			border none
+
